@@ -14,8 +14,18 @@
 
     <div class="button-container">
       <button class="download-button">Download</button>
-      <button class="about-button">About Us</button>
-      <button class="scripts-button">Scripts</button>
+      <button
+        class="about-button"
+        onclick="location.href='https://script-beam-x.github.io/about/'"
+      >
+        About Us
+      </button>
+      <button
+        class="scripts-button"
+        onclick="location.href='https://script-beam-x.github.io/scripts/'"
+      >
+        Scripts
+      </button>
     </div>
 
     <div class="discord-link">
@@ -23,5 +33,13 @@
         >Join Our Discord</a
       >
     </div>
+
+    <script>
+      document
+        .querySelector(".download-button")
+        .addEventListener("click", function () {
+          window.location.href = "https://script-beam-x.github.io/download";
+        });
+    </script>
   </body>
 </html>
